@@ -4,5 +4,5 @@ services:
     web:
         image: nats
         volumes: 
-          - ./config/{PORTAINER_EDGE_ID}:/tmp/config
-          - ./config/{PORTAINER_EDGE_GROUP}:/tmp/config_grp
+          - ./config/${PORTAINER_EDGE_ID}:/tmp/config
+          - ./config/${PORTAINER_EDGE_GROUP}:/tmp/config_grp
