@@ -4,7 +4,7 @@ services:
     web:
         image: nginx
         volumes: 
-          - ./config/${PORTAINER_EDGE_ID}:/tmp/config
-          - ./config/${PORTAINER_EDGE_ID}.yml:/tmp/${PORTAINER_EDGE_ID}.yml
-          - ./config/${PORTAINER_EDGE_GROUP}:/tmp/config_grp
-          - ./config/${PORTAINER_EDGE_GROUP}.yml:/tmp/${PORTAINER_EDGE_GROUP}.yml
+          - ./config/${PORTAINER_EDGE_ID}:/tmp/device_config_dir
+          - ./config/${PORTAINER_EDGE_ID}.yml:/tmp/device_config_from_file.yml
+          - ./config/${PORTAINER_EDGE_GROUP}:/tmp/grp_config_dir
+          - ./config/${PORTAINER_EDGE_GROUP}.yml:/tmp/group_config_from_file.yml
