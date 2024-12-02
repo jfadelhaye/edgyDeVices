@@ -3,5 +3,4 @@ version: '3'
 services:
     web:
         image: nginx
-        env_file:
-          - /tmp/${PORTAINER_EDGE_ID}/env
+
